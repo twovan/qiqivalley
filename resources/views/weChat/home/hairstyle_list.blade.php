@@ -18,7 +18,7 @@
         }
 
         #root > :first-child {
-            margin-top: 10px;
+            /*margin-top: 10px;*/
         }
 
         /* 每一列图片包含层 */
@@ -65,31 +65,15 @@
             <div class="weui-flex">
                 <div class="weui-flex__item">
                     <a class="weui-cell weui-cell_access @if($type == 1) active @endif"
-                       href="{{url('wechat/hairstyle')}}?type=1">百科</a>
+                       href="{{url('wechat/hairstyle')}}?type=1">儿童绘本</a>
                 </div>
                 <div class="weui-flex__item">
                     <a class="weui-cell weui-cell_access @if($type == 2) active @endif"
-                       href="{{url('wechat/hairstyle')}}?type=2">历史</a>
+                       href="{{url('wechat/hairstyle')}}?type=2">英文绘本</a>
                 </div>
                 <div class="weui-flex__item">
                     <a class="weui-cell weui-cell_access @if($type == 3) active @endif"
-                       href="{{url('wechat/hairstyle')}}?type=3">育儿</a>
-                </div>
-                <div class="weui-flex__item">
-                    <a class="weui-cell weui-cell_access @if($type == 4) active @endif"
-                       href="{{url('wechat/hairstyle')}}?type=4">艺术</a>
-                </div>
-                <div class="weui-flex__item">
-                    <a class="weui-cell weui-cell_access @if($type == 5) active @endif"
-                       href="{{url('wechat/hairstyle')}}?type=5">英语</a>
-                </div>
-                <div class="weui-flex__item">
-                    <a class="weui-cell weui-cell_access @if($type == 6) active @endif"
-                       href="{{url('wechat/hairstyle')}}?type=6">益智</a>
-                </div>
-                <div class="weui-flex__item">
-                    <a class="weui-cell weui-cell_access @if($type == 7) active @endif"
-                       href="{{url('wechat/hairstyle')}}?type=7">故事</a>
+                       href="{{url('wechat/hairstyle')}}?type=3">大人读物</a>
                 </div>
             </div>
         </div>

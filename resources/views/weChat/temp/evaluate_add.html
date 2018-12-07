@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>订单评价</title>
+    <link rel="stylesheet" href="lib/weui.css"/>
+    <link rel="stylesheet" href="css/example.css"/>
+    <link rel="stylesheet" href="lib/font-awesome.min.css">
+    <link rel="stylesheet" href="css/base.css"/>
+</head>
+<body ontouchstart>
+<div class="container">
+    <div class="page__bd page__bd_footer">
+        <div class="weui-panel weui-panel_access">
+            <div class="weui-panel__hd">
+                <h4 class="weui-media-box__title fontc-black">订单评价</h4>
+                <p class="weui-media-box__desc">请留下您的宝贵意见!</p>
+            </div>
+            <div class="weui-panel__bd evaluate-add">
+                <div class="weui-media-box ">
+                    <h4 class="weui-media-box__title star" id="star">
+                        <i data-num="1" class="fa fa-star"></i>
+                        <i data-num="2" class="fa fa-star"></i>
+                        <i data-num="3" class="fa fa-star"></i>
+                        <i data-num="4" class="fa fa-star"></i>
+                        <i data-num="5" class="fa fa-star"></i>
+                    </h4>
+                    <div class="textarea-box">
+                        <textarea class="weui-textarea" placeholder="请输入文本" rows="4"></textarea>
+                    </div>
+                </div>
+                <div class="weui-media-box">
+                    <p class="weui-media-box__desc">订单编号：201789492343296536584</p>
+                    <p class="weui-media-box__desc">付款时间：2018-12-04 12:34:56</p>
+                    <p class="weui-media-box__desc">支付方式：微信支付</p>
+                </div>
+            </div>
+            <div class="weui-panel__ft">
+                <a href="javascript:void(0);" class="weui-cell weui-cell_access weui-cell_link weui-form-preview__btn weui-form-preview__btn_primary">
+                    <div class="weui-cell__bd">提交评价</div>
+                </a>
+            </div>
+        </div>
+
+        <div class="page__hd text-center">
+            <h4 class="weui-media-box__title fw300">合理屋理发店</h4>
+            <p class="weui-media-box__desc fw300">客服电话 400-0000000</p>
+        </div>
+
+    </div>
+</div>
+<script type="text/javascript" src="lib/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="https://res.wx.qq.com/open/libs/weuijs/1.0.0/weui.min.js"></script>
+<script>
+    $(function () {
+        var that = $('#star').find('i');
+        that.click(function () {
+            that.removeClass('checked');
+            var thisL = $(this).index();
+            for(var i = 0;i <= thisL;i++){
+                that.eq(i).addClass('checked');
+            }
+            console.log(thisL++);
+        });
+
+    })
+</script>
+</body>
+</html>

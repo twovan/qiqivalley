@@ -1,0 +1,62 @@
+.webuploader-container {
+	position: relative;
+    float: left;
+    margin: 1px 10px 0 0;
+}
+.webuploader-element-invisible {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px,1px,1px,1px);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.webuploader-pick {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	background: #00b7ee;
+    padding: 5px 10px;
+	color: #fff;
+    font-weight: 400;
+    line-height: 1.42857143;
+    margin-bottom: 0;
+	text-align: center;
+	border-radius: 3px;
+	overflow: hidden;
+}
+.webuploader-pick-hover {
+	background: #00a2d4;
+}
+
+.webuploader-pick-disable {
+	opacity: 0.6;
+	pointer-events:none;
+}
+.webuploader-container label{
+    margin: 0;
+}
+.webuploader-progress{
+    margin: 0;
+    margin-top: 6px;
+    padding: 0;
+}
+.webuploader-input{
+    margin-top: 1px;
+}
+.webuploader-col-one{
+    padding: 0
+}
+.webuploader-col-two{
+    padding:0;
+    margin-top: 10px;
+}
+@media (min-width: 768px) {
+    .webuploader-container{
+        margin: 1px 10px;
+    }
+    .webuploader-col-two{
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,792 @@
+@import url(http://fonts.googleapis.com/css?family=Signika+Negative:400,300,600);
+/**
+ * Unicorn Admin Template
+ * Version 2.2.0
+ * Diablo9983 -> diablo9983@gmail.com
+**/
+
+/* Bootstrap overrides and additions */
+.progress.progress-xs {
+  height: 7px;
+}
+.progress.progress-sm {
+  height: 12px;
+}
+.progress-bar {
+  background-color: #34495e;
+}
+.progress-striped .progress-bar {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+.progress-bar-danger {
+  background-color: #e74c3c;
+}
+.progress-striped .progress-bar-danger {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+.progress-bar-success {
+  background-color: #2ecc71;
+}
+.progress-striped .progress-bar-success {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+.progress-bar-info {
+  background-color: #3498db;
+}
+.progress-striped .progress-bar-info {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+.progress-bar-warning {
+  background-color: #f39c12;
+}
+.progress-striped .progress-bar-warning {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+.progress-bar-pink {
+  background-color: #f09ff2;
+}
+.progress-striped .progress-bar-pink {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+.progress-bar-purple {
+  background-color: #9b59b6;
+}
+.progress-striped .progress-bar-purple {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+.progress-bar-dark-green {
+  background-color: #27ae60;
+}
+.progress-striped .progress-bar-dark-green {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+.progress-bar-dark-blue {
+  background-color: #2980b9;
+}
+.progress-striped .progress-bar-dark-blue {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+.progress-bar-dark-red {
+  background-color: #c0392b;
+}
+.progress-striped .progress-bar-dark-red {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+.progress-bar-yellow {
+  background-color: #dab10d;
+}
+.progress-striped .progress-bar-yellow {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+.progress-bar-inverse {
+  background-color: #555555;
+}
+.progress-striped .progress-bar-inverse {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+.form-control:focus {
+  border-color: #34495e !important;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(52, 73, 94, 0.3) !important;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(52, 73, 94, 0.3) !important;
+}
+.tooltip .tooltip-inner {
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 0;
+}
+.flat .progress {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: #f3f3f3;
+}
+.flat .progress .progress-bar {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.flat .form-control {
+  border-radius: 0;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+.dropdown-menu li a {
+  font-size: 12px;
+}
+.dropdown-menu li a:hover {
+  color: inherit;
+  background-color: #eeeeee;
+}
+.dropdown-primary.dropdown-menu li a:hover,
+.dropdown-success.dropdown-menu li a:hover,
+.dropdown-warning.dropdown-menu li a:hover,
+.dropdown-danger.dropdown-menu li a:hover,
+.dropdown-info.dropdown-menu li a:hover,
+.dropdown-inverse.dropdown-menu li a:hover,
+.dropdown-dark-red.dropdown-menu li a:hover,
+.dropdown-dark-green.dropdown-menu li a:hover,
+.dropdown-dark-blue.dropdown-menu li a:hover,
+.dropdown-pink.dropdown-menu li a:hover,
+.dropdown-purple.dropdown-menu li a:hover {
+  color: #fff;
+}
+.dropdown-primary.dropdown-menu li a:hover {
+  background-color: #34495e;
+}
+.dropdown-success.dropdown-menu li a:hover {
+  background-color: #2ecc71;
+}
+.dropdown-warning.dropdown-menu li a:hover {
+  background-color: #f39c12;
+}
+.dropdown-danger.dropdown-menu li a:hover {
+  background-color: #e74c3c;
+}
+.dropdown-info.dropdown-menu li a:hover {
+  background-color: #3498db;
+}
+.dropdown-inverse.dropdown-menu li a:hover {
+  background-color: #555555;
+}
+.dropdown-dark-red.dropdown-menu li a:hover {
+  background-color: #c0392b;
+}
+.dropdown-dark-green.dropdown-menu li a:hover {
+  background-color: #27ae60;
+}
+.dropdown-dark-blue.dropdown-menu li a:hover {
+  background-color: #2980b9;
+}
+.dropdown-pink.dropdown-menu li a:hover {
+  background-color: #f09ff2;
+}
+.dropdown-purple.dropdown-menu li a:hover {
+  background-color: #9b59b6;
+}
+.dropdown-yellow.dropdown-menu li a:hover {
+  color: #ab3326;
+  background-color: #f1c40f;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu .active a,
+.dropdown-menu .active a:hover,
+.ui-menu .ui-menu-item a.ui-state-focus,
+.ui-menu .ui-menu-item a.ui-state-active {
+  background-image: none !important;
+}
+.popover .content-big {
+  font-size: 14px;
+  font-weight: bold;
+}
+.popover .content-small {
+  font-size: 11px;
+  color: #777777;
+}
+.badge-default,
+.label-default {
+  background-color: #34495e;
+}
+.badge-default[href]:hover,
+.label-default[href]:hover,
+.badge-default[href]:focus,
+.label-default[href]:focus {
+  background-color: #222f3d;
+}
+.badge-success,
+.label-danger {
+  background-color: #2ecc71;
+}
+.badge-success[href]:hover,
+.label-danger[href]:hover,
+.badge-success[href]:focus,
+.label-danger[href]:focus {
+  background-color: #25a25a;
+}
+.badge-warning,
+.label-warning {
+  background-color: #f39c12;
+}
+.badge-warning[href]:hover,
+.label-warning[href]:hover,
+.badge-warning[href]:focus,
+.label-warning[href]:focus {
+  background-color: #c87f0a;
+}
+.badge-info,
+.label-info {
+  background-color: #3498db;
+}
+.badge-info[href]:hover,
+.label-info[href]:hover,
+.badge-info[href]:focus,
+.label-info[href]:focus {
+  background-color: #217dbb;
+}
+.badge-danger,
+.label-danger {
+  background-color: #e74c3c;
+}
+.badge-danger[href]:hover,
+.label-danger[href]:hover,
+.badge-danger[href]:focus,
+.label-danger[href]:focus {
+  background-color: #d62c1a;
+}
+.badge-purple,
+.label-purple {
+  background-color: #9b59b6;
+}
+.badge-purple[href]:hover,
+.label-purple[href]:hover,
+.badge-purple[href]:focus,
+.label-purple[href]:focus {
+  background-color: #804399;
+}
+.label-inverse,
+.badge-inverse {
+  background-color: #555555;
+}
+.label-inverse[href]:hover,
+.badge-inverse[href]:hover,
+.label-inverse[href]:focus,
+.badge-inverse[href]:focus {
+  background-color: #3c3c3c;
+}
+.alert {
+  padding: 10px 15px;
+}
+.btn {
+  margin: 2px 0;
+}
+.input-group-btn .btn {
+  margin: 0;
+}
+.btn-primary {
+  color: #ffffff;
+  background-color: #34495e;
+  border-color: #34495e;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  color: #ffffff;
+  background-color: #253544;
+  border-color: #1e2a37;
+}
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  background-image: none;
+}
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+  background-color: #34495e;
+  border-color: #34495e;
+}
+.btn-primary .badge {
+  color: #34495e;
+  background-color: #fff;
+}
+.btn-success {
+  color: #ffffff;
+  background-color: #2ecc71;
+  border-color: #2ecc71;
+}
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active,
+.btn-success.active,
+.open .dropdown-toggle.btn-success {
+  color: #ffffff;
+  background-color: #26ab5f;
+  border-color: #239a55;
+}
+.btn-success:active,
+.btn-success.active,
+.open .dropdown-toggle.btn-success {
+  background-image: none;
+}
+.btn-success.disabled,
+.btn-success[disabled],
+fieldset[disabled] .btn-success,
+.btn-success.disabled:hover,
+.btn-success[disabled]:hover,
+fieldset[disabled] .btn-success:hover,
+.btn-success.disabled:focus,
+.btn-success[disabled]:focus,
+fieldset[disabled] .btn-success:focus,
+.btn-success.disabled:active,
+.btn-success[disabled]:active,
+fieldset[disabled] .btn-success:active,
+.btn-success.disabled.active,
+.btn-success[disabled].active,
+fieldset[disabled] .btn-success.active {
+  background-color: #2ecc71;
+  border-color: #2ecc71;
+}
+.btn-success .badge {
+  color: #2ecc71;
+  background-color: #fff;
+}
+.btn-warning {
+  color: #ffffff;
+  background-color: #f39c12;
+  border-color: #f39c12;
+}
+.btn-warning:hover,
+.btn-warning:focus,
+.btn-warning:active,
+.btn-warning.active,
+.open .dropdown-toggle.btn-warning {
+  color: #ffffff;
+  background-color: #d2850b;
+  border-color: #be780a;
+}
+.btn-warning:active,
+.btn-warning.active,
+.open .dropdown-toggle.btn-warning {
+  background-image: none;
+}
+.btn-warning.disabled,
+.btn-warning[disabled],
+fieldset[disabled] .btn-warning,
+.btn-warning.disabled:hover,
+.btn-warning[disabled]:hover,
+fieldset[disabled] .btn-warning:hover,
+.btn-warning.disabled:focus,
+.btn-warning[disabled]:focus,
+fieldset[disabled] .btn-warning:focus,
+.btn-warning.disabled:active,
+.btn-warning[disabled]:active,
+fieldset[disabled] .btn-warning:active,
+.btn-warning.disabled.active,
+.btn-warning[disabled].active,
+fieldset[disabled] .btn-warning.active {
+  background-color: #f39c12;
+  border-color: #f39c12;
+}
+.btn-warning .badge {
+  color: #f39c12;
+  background-color: #fff;
+}
+.btn-info {
+  color: #ffffff;
+  background-color: #3498db;
+  border-color: #3498db;
+}
+.btn-info:hover,
+.btn-info:focus,
+.btn-info:active,
+.btn-info.active,
+.open .dropdown-toggle.btn-info {
+  color: #ffffff;
+  background-color: #2383c4;
+  border-color: #2077b2;
+}
+.btn-info:active,
+.btn-info.active,
+.open .dropdown-toggle.btn-info {
+  background-image: none;
+}
+.btn-info.disabled,
+.btn-info[disabled],
+fieldset[disabled] .btn-info,
+.btn-info.disabled:hover,
+.btn-info[disabled]:hover,
+fieldset[disabled] .btn-info:hover,
+.btn-info.disabled:focus,
+.btn-info[disabled]:focus,
+fieldset[disabled] .btn-info:focus,
+.btn-info.disabled:active,
+.btn-info[disabled]:active,
+fieldset[disabled] .btn-info:active,
+.btn-info.disabled.active,
+.btn-info[disabled].active,
+fieldset[disabled] .btn-info.active {
+  background-color: #3498db;
+  border-color: #3498db;
+}
+.btn-info .badge {
+  color: #3498db;
+  background-color: #fff;
+}
+.btn-danger {
+  color: #ffffff;
+  background-color: #e74c3c;
+  border-color: #e74c3c;
+}
+.btn-danger:hover,
+.btn-danger:focus,
+.btn-danger:active,
+.btn-danger.active,
+.open .dropdown-toggle.btn-danger {
+  color: #ffffff;
+  background-color: #df2e1b;
+  border-color: #cd2a19;
+}
+.btn-danger:active,
+.btn-danger.active,
+.open .dropdown-toggle.btn-danger {
+  background-image: none;
+}
+.btn-danger.disabled,
+.btn-danger[disabled],
+fieldset[disabled] .btn-danger,
+.btn-danger.disabled:hover,
+.btn-danger[disabled]:hover,
+fieldset[disabled] .btn-danger:hover,
+.btn-danger.disabled:focus,
+.btn-danger[disabled]:focus,
+fieldset[disabled] .btn-danger:focus,
+.btn-danger.disabled:active,
+.btn-danger[disabled]:active,
+fieldset[disabled] .btn-danger:active,
+.btn-danger.disabled.active,
+.btn-danger[disabled].active,
+fieldset[disabled] .btn-danger.active {
+  background-color: #e74c3c;
+  border-color: #e74c3c;
+}
+.btn-danger .badge {
+  color: #e74c3c;
+  background-color: #fff;
+}
+.btn-pink {
+  color: #ffffff;
+  background-color: #f09ff2;
+  border-color: #ec89ef;
+}
+.btn-pink:hover,
+.btn-pink:focus,
+.btn-pink:active,
+.btn-pink.active,
+.open .dropdown-toggle.btn-pink {
+  color: #ffffff;
+  background-color: #ea7bed;
+  border-color: #e453e8;
+}
+.btn-pink:active,
+.btn-pink.active,
+.open .dropdown-toggle.btn-pink {
+  background-image: none;
+}
+.btn-pink.disabled,
+.btn-pink[disabled],
+fieldset[disabled] .btn-pink,
+.btn-pink.disabled:hover,
+.btn-pink[disabled]:hover,
+fieldset[disabled] .btn-pink:hover,
+.btn-pink.disabled:focus,
+.btn-pink[disabled]:focus,
+fieldset[disabled] .btn-pink:focus,
+.btn-pink.disabled:active,
+.btn-pink[disabled]:active,
+fieldset[disabled] .btn-pink:active,
+.btn-pink.disabled.active,
+.btn-pink[disabled].active,
+fieldset[disabled] .btn-pink.active {
+  background-color: #f09ff2;
+  border-color: #ec89ef;
+}
+.btn-pink .badge {
+  color: #f09ff2;
+  background-color: #fff;
+}
+.btn-purple {
+  color: #ffffff;
+  background-color: #9b59b6;
+  border-color: #8f4bab;
+}
+.btn-purple:hover,
+.btn-purple:focus,
+.btn-purple:active,
+.btn-purple.active,
+.open .dropdown-toggle.btn-purple {
+  color: #ffffff;
+  background-color: #8646a0;
+  border-color: #6b3880;
+}
+.btn-purple:active,
+.btn-purple.active,
+.open .dropdown-toggle.btn-purple {
+  background-image: none;
+}
+.btn-purple.disabled,
+.btn-purple[disabled],
+fieldset[disabled] .btn-purple,
+.btn-purple.disabled:hover,
+.btn-purple[disabled]:hover,
+fieldset[disabled] .btn-purple:hover,
+.btn-purple.disabled:focus,
+.btn-purple[disabled]:focus,
+fieldset[disabled] .btn-purple:focus,
+.btn-purple.disabled:active,
+.btn-purple[disabled]:active,
+fieldset[disabled] .btn-purple:active,
+.btn-purple.disabled.active,
+.btn-purple[disabled].active,
+fieldset[disabled] .btn-purple.active {
+  background-color: #9b59b6;
+  border-color: #8f4bab;
+}
+.btn-purple .badge {
+  color: #9b59b6;
+  background-color: #fff;
+}
+.btn-inverse {
+  color: #ffffff;
+  background-color: #555555;
+  border-color: #494949;
+}
+.btn-inverse:hover,
+.btn-inverse:focus,
+.btn-inverse:active,
+.btn-inverse.active,
+.open .dropdown-toggle.btn-inverse {
+  color: #ffffff;
+  background-color: #414141;
+  border-color: #2a2a2a;
+}
+.btn-inverse:active,
+.btn-inverse.active,
+.open .dropdown-toggle.btn-inverse {
+  background-image: none;
+}
+.btn-inverse.disabled,
+.btn-inverse[disabled],
+fieldset[disabled] .btn-inverse,
+.btn-inverse.disabled:hover,
+.btn-inverse[disabled]:hover,
+fieldset[disabled] .btn-inverse:hover,
+.btn-inverse.disabled:focus,
+.btn-inverse[disabled]:focus,
+fieldset[disabled] .btn-inverse:focus,
+.btn-inverse.disabled:active,
+.btn-inverse[disabled]:active,
+fieldset[disabled] .btn-inverse:active,
+.btn-inverse.disabled.active,
+.btn-inverse[disabled].active,
+fieldset[disabled] .btn-inverse.active {
+  background-color: #555555;
+  border-color: #494949;
+}
+.btn-inverse .badge {
+  color: #555555;
+  background-color: #fff;
+}
+.btn-dark-red {
+  color: #ffffff;
+  background-color: #c0392b;
+  border-color: #ab3326;
+}
+.btn-dark-red:hover,
+.btn-dark-red:focus,
+.btn-dark-red:active,
+.btn-dark-red.active,
+.open .dropdown-toggle.btn-dark-red {
+  color: #ffffff;
+  background-color: #9f2f24;
+  border-color: #79241b;
+}
+.btn-dark-red:active,
+.btn-dark-red.active,
+.open .dropdown-toggle.btn-dark-red {
+  background-image: none;
+}
+.btn-dark-red.disabled,
+.btn-dark-red[disabled],
+fieldset[disabled] .btn-dark-red,
+.btn-dark-red.disabled:hover,
+.btn-dark-red[disabled]:hover,
+fieldset[disabled] .btn-dark-red:hover,
+.btn-dark-red.disabled:focus,
+.btn-dark-red[disabled]:focus,
+fieldset[disabled] .btn-dark-red:focus,
+.btn-dark-red.disabled:active,
+.btn-dark-red[disabled]:active,
+fieldset[disabled] .btn-dark-red:active,
+.btn-dark-red.disabled.active,
+.btn-dark-red[disabled].active,
+fieldset[disabled] .btn-dark-red.active {
+  background-color: #c0392b;
+  border-color: #ab3326;
+}
+.btn-dark-red .badge {
+  color: #c0392b;
+  background-color: #fff;
+}
+.btn-dark-blue {
+  color: #ffffff;
+  background-color: #2980b9;
+  border-color: #2472a4;
+}
+.btn-dark-blue:hover,
+.btn-dark-blue:focus,
+.btn-dark-blue:active,
+.btn-dark-blue.active,
+.open .dropdown-toggle.btn-dark-blue {
+  color: #ffffff;
+  background-color: #226998;
+  border-color: #194f72;
+}
+.btn-dark-blue:active,
+.btn-dark-blue.active,
+.open .dropdown-toggle.btn-dark-blue {
+  background-image: none;
+}
+.btn-dark-blue.disabled,
+.btn-dark-blue[disabled],
+fieldset[disabled] .btn-dark-blue,
+.btn-dark-blue.disabled:hover,
+.btn-dark-blue[disabled]:hover,
+fieldset[disabled] .btn-dark-blue:hover,
+.btn-dark-blue.disabled:focus,
+.btn-dark-blue[disabled]:focus,
+fieldset[disabled] .btn-dark-blue:focus,
+.btn-dark-blue.disabled:active,
+.btn-dark-blue[disabled]:active,
+fieldset[disabled] .btn-dark-blue:active,
+.btn-dark-blue.disabled.active,
+.btn-dark-blue[disabled].active,
+fieldset[disabled] .btn-dark-blue.active {
+  background-color: #2980b9;
+  border-color: #2472a4;
+}
+.btn-dark-blue .badge {
+  color: #2980b9;
+  background-color: #fff;
+}
+.btn-dark-green {
+  color: #ffffff;
+  background-color: #27ae60;
+  border-color: #229955;
+}
+.btn-dark-green:hover,
+.btn-dark-green:focus,
+.btn-dark-green:active,
+.btn-dark-green.active,
+.open .dropdown-toggle.btn-dark-green {
+  color: #ffffff;
+  background-color: #208d4e;
+  border-color: #176739;
+}
+.btn-dark-green:active,
+.btn-dark-green.active,
+.open .dropdown-toggle.btn-dark-green {
+  background-image: none;
+}
+.btn-dark-green.disabled,
+.btn-dark-green[disabled],
+fieldset[disabled] .btn-dark-green,
+.btn-dark-green.disabled:hover,
+.btn-dark-green[disabled]:hover,
+fieldset[disabled] .btn-dark-green:hover,
+.btn-dark-green.disabled:focus,
+.btn-dark-green[disabled]:focus,
+fieldset[disabled] .btn-dark-green:focus,
+.btn-dark-green.disabled:active,
+.btn-dark-green[disabled]:active,
+fieldset[disabled] .btn-dark-green:active,
+.btn-dark-green.disabled.active,
+.btn-dark-green[disabled].active,
+fieldset[disabled] .btn-dark-green.active {
+  background-color: #27ae60;
+  border-color: #229955;
+}
+.btn-dark-green .badge {
+  color: #27ae60;
+  background-color: #fff;
+}
+.btn-yellow {
+  color: #ab3326;
+  background-color: #f1c40f;
+  border-color: #dab10d;
+}
+.btn-yellow:hover,
+.btn-yellow:focus,
+.btn-yellow:active,
+.btn-yellow.active,
+.open .dropdown-toggle.btn-yellow {
+  color: #ab3326;
+  background-color: #cba50c;
+  border-color: #a08209;
+}
+.btn-yellow:active,
+.btn-yellow.active,
+.open .dropdown-toggle.btn-yellow {
+  background-image: none;
+}
+.btn-yellow.disabled,
+.btn-yellow[disabled],
+fieldset[disabled] .btn-yellow,
+.btn-yellow.disabled:hover,
+.btn-yellow[disabled]:hover,
+fieldset[disabled] .btn-yellow:hover,
+.btn-yellow.disabled:focus,
+.btn-yellow[disabled]:focus,
+fieldset[disabled] .btn-yellow:focus,
+.btn-yellow.disabled:active,
+.btn-yellow[disabled]:active,
+fieldset[disabled] .btn-yellow:active,
+.btn-yellow.disabled.active,
+.btn-yellow[disabled].active,
+fieldset[disabled] .btn-yellow.active {
+  background-color: #f1c40f;
+  border-color: #dab10d;
+}
+.btn-yellow .badge {
+  color: #f1c40f;
+  background-color: #fff;
+}
+.btn-pink .caret,
+.btn-purple .caret,
+.btn-inverse .caret,
+.btn-dark-red .caret,
+.btn-dark-blue .caret,
+.btn-dark-green .caret {
+  border-top-color: #ffffff;
+}
+.dropup .btn-pink .caret,
+.dropup .btn-purple .caret,
+.dropup .btn-inverse .caret,
+.dropup .btn-dark-red .caret,
+.dropup .btn-dark-blue .caret,
+.dropup .btn-dark-green .caret {
+  border-bottom-color: #ffffff;
+}
+.btn-yellow .caret {
+  border-top-color: #ab3326;
+}
+.dropup .btn-yellow .caret {
+  border-bottom-color: #ab3326;
+}
+.btn-xs {
+  font-size: 10.5px;
+  padding: 3px 8px;
+}
+

@@ -1,0 +1,51 @@
+
+.table.with-check tr th:first-child,
+.table.with-check tr td:first-child {
+    width: 10px;
+}
+.table.with-check tr td .footable-row-detail-inner{
+    margin-left: 48px;
+}
+.gohome {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 100
+}
+.gohome a {
+    height: 38px;
+    width: 38px;
+    display: block;
+    background: #2f4050;
+    padding: 9px 8px;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+    opacity: .5
+}
+.gohome a:hover {
+    opacity: 1
+}
+
+.btn-white {
+    color: inherit;
+    background: #fff;
+    border: 1px solid #e7eaec
+}
+
+.btn-white.active, .btn-white:active, .btn-white:focus, .btn-white:hover, .open .dropdown-toggle.btn-white {
+    color: inherit;
+    border: 1px solid #d2d2d2
+}
+
+.btn-white.active, .btn-white:active {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .15) inset
+}
+
+.btn-white.active, .btn-white:active, .open .dropdown-toggle.btn-white {
+    background-image: none
+}
+
+.btn-white.active[disabled], .btn-white.disabled, .btn-white.disabled.active, .btn-white.disabled:active, .btn-white.disabled:focus, .btn-white.disabled:hover, .btn-white[disabled], .btn-white[disabled]:active, .btn-white[disabled]:focus, .btn-white[disabled]:hover, fieldset[disabled] .btn-white, fieldset[disabled] .btn-white.active, fieldset[disabled] .btn-white:active, fieldset[disabled] .btn-white:focus, fieldset[disabled] .btn-white:hover {
+    color: #cacaca
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>门店详情</title>
+    <link rel="stylesheet" href="lib/weui.css"/>
+    <link rel="stylesheet" href="css/example.css"/>
+    <link rel="stylesheet" href="lib/font-awesome.min.css">
+    <link rel="stylesheet" href="lib/swiper.min.css">
+    <link rel="stylesheet" href="css/base.css"/>
+</head>
+<body ontouchstart>
+<div class="container bgc-white">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img class="full-img" src="./images/pic_article.png"></div>
+            <div class="swiper-slide"><img class="full-img" src="./images/pic_article.png"></div>
+            <div class="swiper-slide"><img class="full-img" src="./images/pic_article.png"></div>
+            <div class="swiper-slide"><img class="full-img" src="./images/pic_article.png"></div>
+            <div class="swiper-slide"><img class="full-img" src="./images/pic_article.png"></div>
+            <div class="swiper-slide"><img class="full-img" src="./images/pic_article.png"></div>
+            <div class="swiper-slide"><img class="full-img" src="./images/pic_article.png"></div>
+            <div class="swiper-slide"><img class="full-img" src="./images/pic_article.png"></div>
+            <div class="swiper-slide"><img class="full-img" src="./images/pic_article.png"></div>
+            <div class="swiper-slide"><img class="full-img" src="./images/pic_article.png"></div>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    <div class="page__bd page__bd_footer">
+        <div class="weui-panel__bd">
+                <a href="javascript:;" class="weui-media-box weui-media-box_appmsg evaluate-web">
+                    <div class="weui-media-box__hd"  style="width: 30%;height: auto;">
+                        <img class="full-img" src="./images/pic_160.png">
+                        <p class="weui-media-box__desc fz15">微信扫一扫开始体验</p>
+                    </div>
+                    <div class="weui-media-box__bd evaluate-add" style="width: auto;height: auto;">
+                        <p class="weui-media-box__desc fz15">合理屋-xx店</p>
+                        <p class="weui-media-box__desc fz15">发型师：xxx</p>
+                        <p class="weui-media-box__desc fz15">当前排队人数2人，预计等候时间40分钟</p>
+                        <ul class="weui-media-box__info web-user-list">
+                            <li><img src="images/pic_160.png"></li>
+                            <li><img src="images/pic_160.png"></li>
+                            <li><img src="images/pic_160.png"></li>
+                            <li><img src="images/pic_160.png"></li>
+                            <li><img src="images/pic_160.png"></li>
+                            <li><img src="images/pic_160.png"></li>
+                            <li><img src="images/pic_160.png"></li>
+                            <li><img src="images/pic_160.png"></li>
+                            <li><img src="images/pic_160.png"></li>
+                            <li><img src="images/pic_160.png"></li>
+                            <li><img src="images/pic_160.png"></li>
+                        </ul>
+                    </div>
+                </a>
+        </div>
+
+    </div>
+</div>
+<script type="text/javascript" src="lib/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="https://res.wx.qq.com/open/libs/weuijs/1.0.0/weui.min.js"></script>
+<script src="lib/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+        }
+    });
+</script>
+</body>
+</html>

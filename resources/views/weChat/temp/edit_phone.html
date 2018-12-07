@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>更换手机号</title>
+    <link rel="stylesheet" href="lib/weui.css"/>
+    <link rel="stylesheet" href="css/example.css"/>
+    <link rel="stylesheet" href="lib/font-awesome.min.css">
+    <link rel="stylesheet" href="css/base.css"/>
+</head>
+<body ontouchstart>
+<div class="container">
+    <div class="page__bd page__bd_footer">
+        <div class="weui-panel weui-panel_access">
+            <div class="weui-cells weui-cells_form margin0">
+                <div class="weui-panel__hd weui-media-box_text">
+                    <h4 class="weui-media-box__title fontc-black">更换手机号</h4>
+                    <p class="weui-media-box__desc">请填写您的新手机号码</p>
+                </div>
+                <div class="weui-cell">
+                    <div class="weui-cell__hd"><label class="weui-label">手机号</label></div>
+                    <div class="weui-cell__bd">
+                        <input class="weui-input" type="tel" placeholder="请输入手机号">
+                    </div>
+                </div>
+                <div class="weui-cell weui-cell_vcode">
+                    <div class="weui-cell__hd">
+                        <label class="weui-label">验证码</label>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <input class="weui-input" type="number" placeholder="请输入验证码">
+                    </div>
+                    <div class="weui-cell__ft">
+                        <button class="weui-vcode-btn fz13" id="get_vcode">获取验证码</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="weui-btn-area page__bd_footer">
+                <a class="weui-btn weui-btn_primary" href="javascript:" id="showTooltips">确定</a>
+            </div>
+        </div>
+
+        <div class="page__hd text-center">
+            <h4 class="weui-media-box__title fw300">合理屋理发店</h4>
+            <p class="weui-media-box__desc fw300">客服电话 400-0000000</p>
+        </div>
+
+    </div>
+</div>
+<script type="text/javascript" src="lib/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="https://res.wx.qq.com/open/libs/weuijs/1.0.0/weui.min.js"></script>
+<script>
+    $(function () {
+        $('#get_vcode').click(function () {
+            timer($(this),60);
+        });
+    });
+</script>
+</body>
+</html>

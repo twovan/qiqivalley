@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>发型精选</title>
+    <link rel="stylesheet" href="lib/weui.css"/>
+    <link rel="stylesheet" href="css/example.css"/>
+    <link rel="stylesheet" href="lib/font-awesome.min.css">
+    <link rel="stylesheet" href="css/base.css"/>
+</head>
+<body ontouchstart>
+<div class="container">
+    <div class="page__bd">
+        <div class="weui-cells order_title">
+            <div class="weui-flex">
+                <div class="weui-flex__item">
+                    <a class="weui-cell weui-cell_access active" href="javascript:;">全部</a>
+                </div>
+                <div class="weui-flex__item">
+                    <a class="weui-cell weui-cell_access" href="javascript:;">待服务</a>
+                </div>
+                <div class="weui-flex__item">
+                    <a class="weui-cell weui-cell_access" href="javascript:;">待评价</a>
+                </div>
+            </div>
+        </div>
+        <div class="weui-grids">
+            <a href="javascript:;" class="weui-grid">
+                <div class="weui-grid__icon box-auto">
+                    <img src="./images/icon_tabbar.png" alt="">
+                </div>
+                <p class="weui-grid__label">Grid</p>
+            </a>
+            <a href="javascript:;" class="weui-grid">
+                <div class="weui-grid__icon box-auto">
+                    <img src="./images/icon_tabbar.png" alt="">
+                </div>
+                <p class="weui-grid__label">Grid</p>
+            </a>
+            <a href="javascript:;" class="weui-grid">
+                <div class="weui-grid__icon box-auto">
+                    <img src="./images/icon_tabbar.png" alt="">
+                </div>
+                <p class="weui-grid__label">Grid</p>
+            </a>
+            <a href="javascript:;" class="weui-grid">
+                <div class="weui-grid__icon box-auto">
+                    <img src="./images/icon_tabbar.png" alt="">
+                </div>
+                <p class="weui-grid__label">Grid</p>
+            </a>
+            <a href="javascript:;" class="weui-grid">
+                <div class="weui-grid__icon box-auto">
+                    <img src="./images/icon_tabbar.png" alt="">
+                </div>
+                <p class="weui-grid__label">Grid</p>
+            </a>
+            <a href="javascript:;" class="weui-grid">
+                <div class="weui-grid__icon box-auto">
+                    <img src="./images/icon_tabbar.png" alt="">
+                </div>
+                <p class="weui-grid__label">Grid</p>
+            </a>
+            <a href="javascript:;" class="weui-grid">
+                <div class="weui-grid__icon box-auto">
+                    <img src="./images/icon_tabbar.png" alt="">
+                </div>
+                <p class="weui-grid__label">Grid</p>
+            </a>
+        </div>
+        <div class="weui-gallery">
+            <span class="weui-gallery__img" style="background-image: url(./images/pic_article.png);"></span>
+        </div>
+
+        <div class="page__hd text-center">
+            <h4 class="weui-media-box__title fw300">合理屋理发店</h4>
+            <p class="weui-media-box__desc fw300">客服电话 400-0000000</p>
+        </div>
+
+    </div>
+</div>
+<script type="text/javascript" src="lib/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="https://res.wx.qq.com/open/libs/weuijs/1.0.0/weui.min.js"></script>
+<script>
+    $(function () {
+        $('.weui-grid').click(function () {
+            $('.weui-gallery').css('display','block');
+        });
+        $('.weui-gallery').click(function () {
+            $('.weui-gallery').css('display','none');
+        });
+    })
+</script>
+</body>
+</html>

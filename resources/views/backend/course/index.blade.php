@@ -80,7 +80,7 @@
                                                 data-courses_name="{{$list->courses_name}}"
                                                 data-courses_ts="{{$list->courses_ts}}"
                                                 data-courses_num="{{$list->courses_num}}"
-                                                data-user_name="{{$list->user->name}} "
+                                                data-user_name="@if(collect($list->user)->isNotEmpty()){{$list->user->name}} @endif"
                                                 data-user_id="{{$list->user_id}} "
                                                 data-materialdetail="{{$list->materialdetail}} "
                                         >修改
